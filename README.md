@@ -3,5 +3,5 @@
 
  Apesar de no curso o professor sugestionar que se use a ferramenta VisuAlg, eu preferi usar o Portugol.
 
- Se quiser baixá-lo agora clique aqui.
+ Se quiser baixá-lo agora [clique aqui](http://lite.acad.univali.br/portugol/)
  
