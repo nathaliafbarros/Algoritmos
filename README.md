@@ -1,7 +1,5 @@
-# Meus exercícios de algoritmos
- Esses exercícios foram feitos por mim durante o curso de algoritmos do professor Gustavo Guanabara.
+# Meus exercícios
 
- Apesar de no curso o professor sugerir que se use a ferramenta VisuAlg, eu preferi usar o Portugol Studio.
+ Exercícios feitos durante o curso de algoritmos do professor Gustavo Guanabara, que reescrevi em JavaScript.
 
- Se quiser baixá-lo agora [clique aqui](http://lite.acad.univali.br/portugol/)
  
