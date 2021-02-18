@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escola Algoritmo</title>
+    <style>
+        body{
+            font-family: Arial;
+            text-align: center;
+        }
+        input{
+            font-size: 15pt;
+            width: 50px;
+            margin-top: 20px;                        
+        }
+        input#btn{
+            width: 100px;
+        }
+        
+        div#area{
+            background-color: gray;
+            margin:auto;
+            width: 600px;
+            height: 500px;
+            padding-top: 30px;
+            border-radius: 30px;
+            box-shadow: 3px 3px 5px black;
+                        
+        }
+        div#resultado{
+            margin-top: 20px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="area">
+    <h1>ESCOLA ALGORITMO</h1>
+    <h1>Sistema de verificação de média</h1>        
+    Insira aqui sua primeira nota <input type="number" name="nota1" id="nota1"><br>
+    Insira aqui sua segunda nota <input type="number" name="nota2" id="nota2"><br>
+    Insira aqui sua terceira nota <input type="number" name="nota3" id="nota3"><br>
+    Clique para gerar sua média <input type="button" value="calcular" id="btn" onclick="calcular()"><br>
+    <div id="resultado"></div><br>
+    <div id="aprovacao"></div><br>
+    </div> 
+    <script>
+        
+        function calcular(){
+
+        var nota1 = document.getElementById("nota1")
+        var n1 = Number.parseFloat(nota1.value)
+        var nota2 = document.getElementById("nota2")
+        var n2 = Number.parseFloat(nota2.value)
+        var nota3 = document.getElementById("nota3")
+        var n3 = Number.parseFloat(nota3.value)        
+
+        var media = (n1 + n2 + n3)/3
+
+        var resultado = document.getElementById("resultado")
+        resultado.innerText = `Sua média é ${media.toFixed(1)}`
+        
+        if(media >= 7)
+        {
+            var aprovacao = document.getElementById("aprovacao")
+            aprovacao.innerText = `Portanto você está aprovado(a)!`
+        }
+        else
+        {
+            var aprovacao = document.getElementById("aprovacao")
+            aprovacao.innerText = `Portanto você está reprovado(a)`
+        }
+    }
+    </script>
+</body>
+</html>
