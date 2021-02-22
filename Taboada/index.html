@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taboada</title>
+    <style>
+        body{
+            text-align: center;
+            font-size: 15pt;
+        }
+        div#area{
+            background-color: burlywood;
+            margin: auto;
+            width: 500px;
+            height: 500px;
+            border-radius: 30px;
+            box-shadow: 3px 3px 5px black;
+            padding-top: 20px;
+        }
+        div#resultado{
+            background-color: black;
+            margin: auto;
+            padding-top: 20px;
+            width: 300px;
+            height: 300px;
+            color: white;
+        }
+        input#numero{
+            margin-bottom: 20px;
+            width: 50px;
+            height: 18px;
+        }
+        input#botao{
+            height: 24px;
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <div id="area">
+    <h1>TABUADA</h1>
+    Digite o número da taboada desejada
+    <input type="number" name="numero" id="numero" value="0">
+    <input type="button" value="OK" id="botao" onclick="clicar()">
+    <div id="resultado"></div>
+    </div>
+
+    <script>
+        function clicar(){
+        var numero = document.getElementById("numero")
+        var n = Number.parseInt(numero.value)
+        var resultado = document.getElementById("resultado")
+        
+            for(contador = 1; contador <= 10; contador++){
+            resultado.innerHTML += `${n} x ${contador} = ${n*contador}<br>`
+            }
+        }
+
+    </script>
+    
+</body>
+</html>
